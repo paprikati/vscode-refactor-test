@@ -15,3 +15,23 @@ export const Test = ({
         </div>
     </div>
 }
+
+type FooProps = {
+    str: string, num: number, bool: boolean
+}
+
+class Foo extends React.Component<FooProps> {
+    render() {
+        return (<div>
+        <div>
+            String: <div>{this.props.str}</div>
+        </div>
+        <div>
+            Number: <div>{this.props.num}</div>
+        </div>
+        <div>
+            Boolean: <div>{this.props.bool}</div>
+        </div>
+    </div> )  
+    }
+  }
